@@ -42,12 +42,12 @@ function Illustration() {
   return (
     <IllustrationLayout
       title="Sign In"
-      description="Enter your email and password to sign in"
+      description="Enter your User ID and password to sign in"
       illustration={{
         image: bgImage,
-        title: '"Attention is the new currency"',
+        title: '"Banking has never been more safe."',
         description:
-          "The more effortless the writing looks, the more effort the writer actually put into the process.",
+          "Create a zero balance savings account with us today.",
       }}
     >
       <ArgonBox component="form" role="form">
@@ -83,7 +83,7 @@ function Illustration() {
               color="info"
               fontWeight="medium"
             >
-              Sign up
+              Open New Account
             </ArgonTypography>
           </ArgonTypography>
         </ArgonBox>

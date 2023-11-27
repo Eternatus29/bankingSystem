@@ -39,7 +39,7 @@ function Cover() {
   return (
     <CoverLayout
       title="Welcome!"
-      description="Use these awesome forms to login or create new account in your project for free."
+      description="Use these form to create an account with us."
       image={bgImage}
       imgPosition="top"
       button={{ color: "dark", variant: "gradient" }}
@@ -49,12 +49,6 @@ function Cover() {
           <ArgonTypography variant="h5" fontWeight="medium">
             Register with
           </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox mb={2}>
-          <Socials />
-        </ArgonBox>
-        <ArgonBox px={12}>
-          <Separator />
         </ArgonBox>
         <ArgonBox pt={2} pb={3} px={3}>
           <ArgonBox component="form" role="form">
@@ -74,7 +68,7 @@ function Cover() {
                 fontWeight="regular"
                 sx={{ cursor: "pointer", userSelect: "none" }}
               >
-                &nbsp;&nbsp;I agree the&nbsp;
+                &nbsp;&nbsp;I agree to the&nbsp;
               </ArgonTypography>
               <ArgonTypography
                 component="a"
