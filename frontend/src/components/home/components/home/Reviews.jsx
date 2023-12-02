@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import robertPhoto from "../../../../assets/imgs/robert-brown.png";
+import profile from "../../../../assets/imgs/profile.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 export default function Reviews() {
@@ -89,7 +89,7 @@ export default function Reviews() {
               className="text-xl !font-sans text-gray-600"
               data-aos="zoom-y-out"
             >
-              With over 20,000 satisfied clients all over Egypt, E-Bank is the
+              With many satisfied clients all over the country, Nexus-Bank is the
               ultimate banking solution for a fast, secure, and convenient
               banking experience. Say goodbye to long queues, paperwork, and
               outdated systems. Our innovative technology and personalized
@@ -114,7 +114,7 @@ export default function Reviews() {
                   </svg>
                   <img
                     className="relative rounded-full"
-                    src={robertPhoto}
+                    src={profile}
                     width="96"
                     height="96"
                     alt="Robert Brown"
@@ -127,7 +127,7 @@ export default function Reviews() {
                     {" "}
                     <FaQuoteLeft size={30} className="mr-2" />{" "}
                   </span>{" "}
-                  E-Bank has made banking so easy for me! The multiple account
+                  Nexus-Bank has made banking so easy for me! The multiple account
                   feature is wonderful, and I can transfer, withdraw, and
                   deposit money anywhere and anytime. The support service is
                   also top-notch, always ready to assist with any questions or
@@ -139,12 +139,12 @@ export default function Reviews() {
                   </span>{" "}
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">
-                  Robert Brown
+                  Anik
                 </cite>
                 <div className="text-gray-600">
-                  <span>CEO & Co-Founder</span>{" "}
+                  <span>Co-Founder</span>{" "}
                   <a className="text-blue-600 hover:underline" href="#0">
-                    @FakeCO
+                    @nexus
                   </a>
                 </div>
               </div>

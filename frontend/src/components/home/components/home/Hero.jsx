@@ -18,7 +18,7 @@ export default function Hero() {
                   </span>{" "}
                   Your Banking Experience with{" "}
                   <span className="bg-indigo-600 text-white rounded px-2">
-                    E-Bank!
+                    Nexus Bank!
                   </span>
                 </h1>
 
