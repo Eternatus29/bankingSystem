@@ -2,8 +2,8 @@ import axios from "axios";
 
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "http://localhost:3000/api/admins/"
-    : "http://localhost:3000/api/admins/";
+    ? "https://ebank-2t3r.onrender.com/api/admins/"
+    : "http://localhost:5000/api/admins/";
 
 //Login Admin
 const adminLogin = async (adminData) => {

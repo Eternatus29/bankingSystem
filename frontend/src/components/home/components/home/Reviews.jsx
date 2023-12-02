@@ -89,7 +89,12 @@ export default function Reviews() {
               className="text-xl !font-sans text-gray-600"
               data-aos="zoom-y-out"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum modi nam omnis rem totam velit. Architecto asperiores atque, dignissimos dolores est et id itaque mollitia non, officia optio quia quibusdam, quisquam rem saepe similique suscipit ut veniam? A accusantium amet architecto, at consequuntur cum dicta dignissimos dolorum eius esse in ipsum labore magnam modi nam officiis provident quam quasi quidem repudiandae sapiente sit sunt tempora temporibus totam ullam vel veritatis? Dicta eum expedita magni mollitia numquam officiis recusandae sunt?{" "}
+              With over 20,000 satisfied clients all over Egypt, E-Bank is the
+              ultimate banking solution for a fast, secure, and convenient
+              banking experience. Say goodbye to long queues, paperwork, and
+              outdated systems. Our innovative technology and personalized
+              service make banking easier and more enjoyable than ever. Join the
+              E-Bank revolution today and take control of your finances.{" "}
             </p>
           </header>
 
@@ -122,7 +127,12 @@ export default function Reviews() {
                     {" "}
                     <FaQuoteLeft size={30} className="mr-2" />{" "}
                   </span>{" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore facere id minima porro. Aliquam aliquid corporis, cupiditate debitis dolorum enim magnam quam rem ullam.{" "}
+                  E-Bank has made banking so easy for me! The multiple account
+                  feature is wonderful, and I can transfer, withdraw, and
+                  deposit money anywhere and anytime. The support service is
+                  also top-notch, always ready to assist with any questions or
+                  concerns. E-Bank has truly revolutionized the way I manage my
+                  finances.{" "}
                   <span className="text-orange-500">
                     {" "}
                     <FaQuoteRight size={30} className="ml-2" />{" "}

@@ -24,9 +24,9 @@ export const RetrieveBalance = () => {
     setIsSuccess(true);
 
     setMsg(
-      `You Have Retrieved ${new Intl.NumberFormat("en-IN", {
+      `You Have Retrieved ${new Intl.NumberFormat("ar-EG", {
         style: "currency",
-        currency: "INR",
+        currency: "EGP",
       }).format(intialBalance)} Successfully!`
     );
   };
@@ -47,9 +47,9 @@ export const RetrieveBalance = () => {
         <form onSubmit={handleSubmit}>
           <p className="text-base  text-center font-semibold !font-sans px-2 py-4 mb-10 bg-blue-200 border-b-4 border-blue-800 rounded shadow ">
             Your initial balance was{" "}
-            {new Intl.NumberFormat("en-IN", {
+            {new Intl.NumberFormat("ar-EG", {
               style: "currency",
-              currency: "INR",
+              currency: "EGP",
             }).format(intialBalance)}
           </p>
 

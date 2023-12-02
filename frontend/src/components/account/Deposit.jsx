@@ -36,9 +36,9 @@ export const Deposit = () => {
 
     if (isSuccess) {
       setMsg(
-        `You Have Deposited ${new Intl.NumberFormat("en-IN", {
+        `You Have Deposited ${new Intl.NumberFormat("ar-EG", {
           style: "currency",
-          currency: "INR",
+          currency: "EGP",
         }).format(depositAmount)} into your Account Successfully!`
       );
     }

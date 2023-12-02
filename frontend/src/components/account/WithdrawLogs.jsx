@@ -31,9 +31,9 @@ export const WithdrawLogs = () => {
           <FaMoneyBillWave className="inline-block mr-2" />
           Amount:
           <span className="ml-auto md:mx-2 p-2 text-white bg-green-500 rounded">
-            {new Intl.NumberFormat("en-US", {
+            {new Intl.NumberFormat("ar-EG", {
               style: "currency",
-              currency: "INR",
+              currency: "EGP",
             }).format(log.withdrawed_amount)}
           </span>
         </p>
