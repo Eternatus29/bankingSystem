@@ -131,7 +131,7 @@ export default function Reviews() {
                   feature is wonderful, and I can transfer, withdraw, and
                   deposit money anywhere and anytime. The support service is
                   also top-notch, always ready to assist with any questions or
-                  concerns. E-Bank has truly revolutionized the way I manage my
+                  concerns. Nexus has truly revolutionized the way I manage my
                   finances.{" "}
                   <span className="text-orange-500">
                     {" "}
