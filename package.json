@@ -1,12 +1,12 @@
 {
-  "name": "sprints-mern-e-banking-system",
+  "name": "nexus-bank",
   "version": "1.0.0",
   "description": "",
   "main": "backend/server.js",
   "scripts": {
     "both": "concurrently \"npm:dev\" \"npm:dev2\"",
-    "start": "node Backend/server.js",
-    "dev": "nodemon Backend/server.js",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
     "dev2": "cd Frontend && npm run dev",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
   },
