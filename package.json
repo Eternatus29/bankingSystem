@@ -2,7 +2,7 @@
   "name": "sprints-mern-e-banking-system",
   "version": "1.0.0",
   "description": "",
-  "main": "Backend/server.js",
+  "main": "backend/server.js",
   "scripts": {
     "both": "concurrently \"npm:dev\" \"npm:dev2\"",
     "start": "node Backend/server.js",
