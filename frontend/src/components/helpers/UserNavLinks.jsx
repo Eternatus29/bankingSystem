@@ -31,6 +31,7 @@ import {
 import { navbarLinksClickHandler } from "./navbarLinksClickHandler";
 import { UserNavbarSkeleton } from "./UserNavbarSkeleton";
 
+
 export const UserNavLinks = ({ user }) => {
   const dispatch = useDispatch();
   const { account, isLoading: isUserAccountLoading } = useSelector(
@@ -143,7 +144,7 @@ export const UserNavLinks = ({ user }) => {
       {link.title === "Logout" ? (
         <button
           onClick={link.handleLogout}
-          className="w-full flex items-center p-2 border-r-4 border-red-600 rounded shadow bg-red-200"
+          className="w-full flex items-center p-2 background-transparent border-red-600"
         >
           <link.icon className="text-red-800" size={23} />
           <span className="text-sm  ml-2 font-semibold text-red-800 hover:text-red-700 hover:underline">
@@ -153,12 +154,12 @@ export const UserNavLinks = ({ user }) => {
       ) : (
         <Link
           to={link.to}
-          className="w-full flex items-center p-2 border-r-4 border-blue-800 rounded shadow bg-blue-200"
+          className="w-full flex items-center p-2  border-b-2 border-black-800  "
           onClick={navbarLinksClickHandler}
         >
-          <link.icon className="text-blue-800" size={22} />
+          <link.icon className="text-black-800 mr-5" size={22} />
           <span
-            className={`text-sm ml-2 text-blue-800 hover:text-blue-700 hover:underline ${
+            className={`text-sm ml-2 text-grey-800 hover:text-black-700 hover:underline ${
               useMatch(link.to) ? "underline font-bold" : "font-semibold"
             }`}
           >

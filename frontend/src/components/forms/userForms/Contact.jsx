@@ -5,7 +5,7 @@ import FormButton from "../../shared/FormButton";
 
 export const Contact = () => {
   return (
-    <div className="max-w-4xl w-full">
+    <div className="shadow p-4 rounded max-w-4xl w-full">
       <h3 className="flex justify-center items-center text-2xl sm:text-3xl mb-10 p-4 text-center font-bold bg-blue-200 text-gray-900 border-b-4 border-blue-800 rounded shadow">
         <FcServices size={55} className="mr-1" />
         Contact Our Support!

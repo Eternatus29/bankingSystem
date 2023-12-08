@@ -20,7 +20,7 @@ export const Notification = () => {
 
   if (!notification)
     return (
-      <div className="max-w-5xl w-full">
+      <div className="shadow p-4 rounded max-w-5xl w-full">
         <div className="flex justify-center items-center flex-col gap-4  w-full p-6  bg-white rounded shadow-lg">
           <FcCancel size={150} className="mx-auto" />
 

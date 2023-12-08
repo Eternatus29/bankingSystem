@@ -5,6 +5,10 @@ import { AiFillHeart } from "react-icons/ai";
 import { Logo } from "./Logo";
 import { UserNavLinks } from "../helpers/UserNavLinks";
 import { AdminNavLinks } from "../helpers/AdminNavLinks";
+import heart from "../../assets/icons/heart.png";
+
+
+
 
 export const SideNavbar = ({ admin = null, user = null }) => {
   //toggle sidebar
@@ -64,14 +68,15 @@ export const SideNavbar = ({ admin = null, user = null }) => {
       {/* Sidebar starts */}
 
       {/* Tablet/desktop Sidebar*/}
-      <div className="w-64 absolute sm:relative bg-slate-50 shadow-lg flex-col justify-between hidden lg:flex ">
-        <div className="h-screen overflow-y-auto px-8 py-8 sticky top-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-blue-400">
+      <div className="main-sidenav  absolute sm:relative shadow-lg flex-col justify-between hidden lg:flex ">
+        <div className="h-screen overflow-y-auto px-8 py-8 sticky top-0  ">
           {/* Logo */}
           <Logo />
 
           {/* Welcome Message */}
-          <div className="flex items-center p-2 my-4 bg-blue-200 text-sm font-bold text-blue-800 border-r-4 border-blue-800 rounded shadow">
-            <AiFillHeart className="mr-1" size={22} />
+          <div className="flex items-center p-2 my-4 text-sm font-seim-bold text-black-800 border-r-4 border-black rounded shadow">
+            {/* <img src={heart} alt="heart" className="w-6 h-6 mr-2" /> */}
+            <AiFillHeart className="mr-2" size={28} />
             <span className="w-full">
               {`Welcome, `}
               {admin && admin.name.split(" ")[0]}
@@ -113,7 +118,7 @@ export const SideNavbar = ({ admin = null, user = null }) => {
 
           {/* Welcome Message */}
           <div className="flex items-center p-2 my-4 bg-blue-200 text-sm font-bold text-blue-800 border-r-4 border-blue-800 rounded shadow">
-            <AiFillHeart className="mr-1" size={22} />
+          <img src={heart} alt="heart" className="w-6 h-6 mr-2" />
             <span className="w-full">
               {`Welcome, `}
               {admin && admin.name.split(" ")[0]}

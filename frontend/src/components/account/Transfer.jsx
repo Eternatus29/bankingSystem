@@ -10,6 +10,7 @@ import {
 import FormButton from "../shared/FormButton";
 import MessagesContainer from "../shared/MessagesContainer";
 import { UseResetStatus } from "../../hooks/UseResetStatus";
+import "../../assets/styles/Account.css";
 
 export const Transfer = () => {
   //state for withdraw balance
@@ -74,7 +75,7 @@ export const Transfer = () => {
   });
 
   return (
-    <div className="max-w-5xl w-full self-start">
+    <div className="deposit-cont mt-10 max-w-5xl w-full self-start">
       <h3 className="flex justify-center items-center text-2xl text-center font-bold px-2 py-4 mb-10 bg-blue-200 border-b-4 border-blue-800 rounded shadow ">
         <FcPaid className="mr-1" size={50} />
         Transfer Money

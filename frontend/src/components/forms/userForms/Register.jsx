@@ -10,6 +10,7 @@ import FormButton from "../../shared/FormButton";
 import { Logo } from "../../shared/Logo";
 import MessagesContainer from "../../shared/MessagesContainer";
 import { InputsValidator } from "../helpers/InputsValidator";
+import "../../../assets/styles/user-login.css"
 
 export default function Register() {
   const [formInputs, setFormInputs] = useState({
@@ -83,18 +84,20 @@ export default function Register() {
   };
 
   return (
-    <div className="block p-6 rounded shadow-lg shadow-black/20 bg-slate-50 w-full mx-auto">
+    <div className="main-container flex">
+    <div className="form-container2 block p-6  shadow-lg shadow-black/20 mx-auto">
       <Logo />
-      <h3 className="flex justify-center items-center text-2xl text-blue-800 font-bold text-center p-2 my-4 rounded shadow bg-blue-200 border-x-4 border-blue-800 select-none">
-        <FcCurrencyExchange className="mr-1" size={45} />
-        <span>Register</span>
+      <h3 className="grid justify-center items-center text-3xl  font-semi-bold text-center p-1 my-2 select-none">
+        {/* <FcCurrencyExchange className="mr-1" size={45} /> */}
+        REGISTER
+        <span className="heading"></span>
       </h3>
 
       <form className="mt-10" onSubmit={handleSubmit}>
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="first_name"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className=" font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             First name
           </label>
@@ -113,7 +116,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="last_name"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Last name
           </label>
@@ -137,7 +140,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="email"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Email address
           </label>
@@ -158,7 +161,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="address"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Full Address
           </label>
@@ -178,7 +181,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="password"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Password
           </label>
@@ -198,7 +201,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="repeat_password"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Confirm password
           </label>
@@ -222,7 +225,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="phone"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Phone Number Ex:-(01008878980)
           </label>
@@ -243,7 +246,7 @@ export default function Register() {
         <div className="relative z-0 w-full mb-6">
           <label
             htmlFor="postal"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Postal Code Ex:-(12345)
           </label>
@@ -277,6 +280,17 @@ export default function Register() {
           icon={<TiUserAdd className="mb-[-2px] ml-1" size={27} />}
         />
       </form>
+    </div>
+    <div class="side_img2 shadow-lg shadow-black/20">
+            <div class="side_quote2">
+                <h1>“Absolutely delighted to welcome you to the Nexus Bank family! Your trust means the world to us. </h1>
+                <h3 className="mt-20"> Our team is always here to ensure your banking experience is seamless and enjoyable.
+                 </h3>
+                 <p className="my-10">Here's to a prosperous partnership!”</p>
+                 <Logo/>
+                <p className="side_para">― Nexus Bank</p>
+            </div>
+        </div>
     </div>
   );
 }

@@ -8,6 +8,8 @@ import { login } from "../../../state/features/User/Auth/authSlice";
 import FormButton from "../../shared/FormButton";
 import { Logo } from "../../shared/Logo";
 import MessagesContainer from "../../shared/MessagesContainer";
+import "../../../assets/styles/user-login.css";
+
 
 export default function Login() {
   const [formInputs, setFormInputs] = useState({
@@ -50,17 +52,18 @@ export default function Login() {
   };
 
   return (
-    <div className="w-full lg:w-[40%] max-w-md block p-6 rounded shadow-lg shadow-black/20 bg-slate-50 mx-auto">
+    <div className="main-container2">
+    <div className="form-container3 block p-6  shadow-lg shadow-black/20 ">
       <Logo />
-      <h3 className="flex justify-center items-center text-2xl text-blue-800 font-bold text-center p-2 my-4 rounded shadow bg-blue-200 border-x-4 border-blue-800 select-none">
-        <FcCurrencyExchange className="mr-1" size={45} />
+      <h3 className="flex justify-center items-center font-semibold form-label mb-2 pl-1 text-3xl">
+        
         <span>Login</span>
       </h3>
       <form className="mt-10" onSubmit={handleSubmit}>
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Email address
           </label>
@@ -79,7 +82,7 @@ export default function Login() {
         <div className="mb-6">
           <label
             htmlFor="password"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="font-semibold form-label w-full inline-block mb-2 pl-1 text-lg"
           >
             Password
           </label>
@@ -117,12 +120,12 @@ export default function Login() {
         <FormButton
           text={{ loading: "Processing", default: "Login" }}
           isLoading={isLoading}
-          icon={<RiLoginCircleFill className="mb-[-2px] ml-1" size={27} />}
+          // icon={<RiLoginCircleFill className="mb-[-2px] ml-1" size={27} />}
         />
 
         {/*Redirect for Register */}
 
-        <p className="text-gray-800 mt-6 text-center">
+        <p className="text-white-800 mt-6 text-center">
           Not a Client?
           <Link
             to="/register"
@@ -132,6 +135,13 @@ export default function Login() {
           </Link>
         </p>
       </form>
+    </div>
+    <div class="side_img">
+            <div class="side_quote">
+                <h1>“We Understand Your Life”</h1>
+                <p>― Nexus Bank</p>
+            </div>
+        </div>
     </div>
   );
 }

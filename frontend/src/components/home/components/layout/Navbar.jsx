@@ -9,6 +9,7 @@ import { MdReviews } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Logo } from "../../../shared/Logo";
 
+
 const navItems = ["Home", "About", "Reviews"];
 const navIcons = [
   <AiFillHome size={25} className="mb-1 mr-1" />,
@@ -63,10 +64,10 @@ export default function Navbar() {
     <>
       <div
         className={`${
-          navbar ? "bg-slate-50 shadow-lg " : " bg-transparent "
+          navbar ? "navbar-cont bg-slate-50 shadow-lg " : " bg-transparent "
         }  fixed z-50 top-0 w-full transition-all duration-300 ease-in-out`}
       >
-        <nav className="max-w-[1800px] w-full mx-auto px-4 sm:px-10 md:px-12 py-2 md:py-4 flex justify-between items-center z-20">
+        <nav className="max-w-[1800px] mx-auto px-2 mx-10 sm:px-10 md:px-12 py-2 md:py-4 flex justify-between items-center z-20">
           <div className="max-w-[200px]">
             <Logo bg={false} textSize="text-lg md:text-2xl lg:text-3xl" />
           </div>

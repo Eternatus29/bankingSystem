@@ -4,6 +4,8 @@ import { FcBullish } from "react-icons/fc";
 import { useSelector } from "react-redux";
 import { PaginationWithdrawList } from "../helpers/PaginationWithdrawList";
 import { FaCalendarAlt, FaInfoCircle, FaMoneyBillWave } from "react-icons/fa";
+import "../../assets/styles/Account.css";
+
 
 export const WithdrawLogs = () => {
   //Get account data

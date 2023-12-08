@@ -11,6 +11,7 @@ import { PaymentMethods } from "../payment/PaymentMethods";
 import FormButton from "../shared/FormButton";
 import MessagesContainer from "../shared/MessagesContainer";
 import { UseResetStatus } from "../../hooks/UseResetStatus";
+import "../../assets/styles/Account.css"
 
 export const Withdraw = () => {
   //state for withdraw balance
@@ -69,7 +70,7 @@ export const Withdraw = () => {
   });
 
   return (
-    <div className="max-w-5xl w-full">
+    <div className="deposit-cont max-w-5xl w-full">
       <h3 className="flex justify-center items-center text-2xl text-center font-bold px-2 py-4 mb-10 bg-blue-200 border-b-4 border-blue-800 rounded shadow ">
         <FcMoneyTransfer className="mr-1" size={50} />
         Withdraw Money

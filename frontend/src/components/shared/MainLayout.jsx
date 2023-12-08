@@ -5,6 +5,9 @@ import { resetUserStatus } from "../../state/features/User/UserData/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Buttons } from "./Buttons";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
+import "../../assets/styles/Account.css"
+
+
 
 export const MainLayout = () => {
   const info = useSelector((state) => state.userData.info);
@@ -21,19 +24,19 @@ export const MainLayout = () => {
   UseResetStatus(() => {
     return () => {
       dispatch(resetUserStatus());
-      document.title = "Nexus Bank";
+      document.title = "E-Bank | Everything You Need";
     };
   });
 
   return (
-    <div className="min-h-screen  flex flex-no-wrap">
+    <div className="main-layout min-h-screen  flex flex-no-wrap">
       {/* side navabr */}
       <SideNavbar user={info} />
 
       <div className="w-full h-full min-h-screen flex flex-col justify-center items-center">
         {/* Navigation Buttons */}
         <Buttons title={title} />
-        <div className="w-full h-full min-h-screen flex justify-center items-center p-3 md:p-6 bg-slate-50">
+        <div className="outlet w-full h-full min-h-screen flex justify-center items-center p-3 md:p-6 ">
           <Outlet />
         </div>
       </div>

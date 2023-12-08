@@ -6,9 +6,9 @@ export const Logo = ({ textSize = null, bg = true }) => {
     <div
       className={`${
         bg
-      } w-full flex justify-center items-center p-2  select-none`}
+      } w-full flex justify-center items-center   select-none`}
     >
-      <img src={logo} alt={"text"} height={120} width={120}/>
+      <img src={logo} alt={"text"} height={150} width={150}/>
     </div>
   );
 };

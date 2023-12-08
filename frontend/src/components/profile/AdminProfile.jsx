@@ -3,13 +3,16 @@ import { FcVip } from "react-icons/fc";
 import { RiArrowRightLine } from "react-icons/ri";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+// import "../../assets/styles/Account.css";
+// import user from "../../assets/icons/user.png"
 
 export default function AdminProfile() {
   const { info } = useSelector((state) => state.adminAuth);
   return (
-    <div className="max-w-4xl w-full self-start">
+    <div className="max-w-4xl w-full self-start shadow ">
       <h2 className="flex items-center text-gray-800 mb-4 text-2xl font-bold px-2 py-4 my-4 rounded shadow bg-blue-200 border-b-4 border-blue-800">
         <span className="flex justify-center items-center mr-2">
+          {/* <img src={user} alt="hello"></img> */}
           <FcVip size={50} />
         </span>
         {info.name}

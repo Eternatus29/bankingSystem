@@ -2,10 +2,10 @@ import React from "react";
 
 export const ChooseAccount = ({ account, accounts, setPreferedAccount }) => {
   return (
-    <div className="w-full flex justify-between items-center flex-col  lg:flex-row gap-2 lg:gap-0 p-3  text-white text-center font-semibold bg-blue-500 border-r-4 border-blue-800 rounded shadow">
+    <div className="w-full flex justify-between items-center flex-col  lg:flex-row gap-2 lg:gap-0 p-3  text-white text-center font-semibold  border-r-4 border-black  shadow">
       {accounts && accounts.length > 0 && (
         <>
-          <p className="w-full lg:w-auto bg-slate-900  px-4 py-2 rounded-md">
+          <p className="w-full  border-r-4 border-black lg:w-auto text-black  px-4 py-2 rounded-md">
             Choose Account
           </p>
           <select

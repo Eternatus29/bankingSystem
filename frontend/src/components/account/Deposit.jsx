@@ -11,6 +11,7 @@ import { PaymentMethods } from "../payment/PaymentMethods";
 import FormButton from "../shared/FormButton";
 import MessagesContainer from "../shared/MessagesContainer";
 import { UseResetStatus } from "../../hooks/UseResetStatus";
+// import  deposit  from "../../assets/icons/deposit.png";
 
 export const Deposit = () => {
   //state for withdraw balance
@@ -69,8 +70,10 @@ export const Deposit = () => {
   });
 
   return (
-    <div className="max-w-5xl w-full">
+    <div className="deposit-cont border-2  p-5  shadow  max-w-5xl w-full">
       <h3 className="flex justify-center items-center text-2xl text-center font-bold px-2 py-4 mb-10 bg-blue-200 border-b-4 border-blue-800 rounded shadow ">
+            {/* <img src={deposit} alt="heart" className="w-6 h-6 mr-2" /> */}
+        
         <FcDonate className="mr-1" size={50} />
         Deposit Money
       </h3>

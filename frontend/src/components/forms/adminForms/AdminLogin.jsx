@@ -8,6 +8,7 @@ import { adminLogin } from "../../../state/features/Admin/Auth/adminAuthSlice";
 import FormButton from "../../shared/FormButton";
 import { Logo } from "../../shared/Logo";
 import MessagesContainer from "../../shared/MessagesContainer";
+import "./Admin.css";
 
 export default function AdminLogin() {
   const [formInputs, setFormInputs] = useState({
@@ -50,24 +51,27 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="block p-6 rounded shadow-lg shadow-black/20 bg-slate-50 max-w-md w-full mx-auto">
+
+
+   
+    <div className="form-container block p-6  shadow-lg shadow-black/20   ">
       <Logo />
-      <h3 className="flex justify-center items-center text-2xl text-blue-800 font-bold text-center p-2 my-4 rounded shadow bg-blue-200 border-x-4 border-blue-800 select-none">
-        <FcPrivacy size={45} />
-        <span>Admins Login</span>
+      <h3 className="flex justify-center items-center text-2xl  font-semi-bold text-center p-1 my-3 select-none">
+       
+        <span className="text-white">Admins Login</span>
       </h3>
       <form className="mt-10" onSubmit={handleSubmit}>
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="form-label w-full inline-block mb-2 pl-1 text-lg "
           >
-            Email address
+            Email
           </label>
           <input
             type="email"
             name="email"
-            className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-800 focus:outline-none"
+            className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-gray-800 focus:outline-none"
             defaultValue={email}
             onChange={(e) =>
               setFormInputs({ ...formInputs, email: e.target.value })
@@ -79,14 +83,14 @@ export default function AdminLogin() {
         <div className="mb-6">
           <label
             htmlFor="password"
-            className="w-full inline-block font-semibold mb-4 p-2 text-gray-800 border-b-4 border-blue-800 rounded shadow bg-blue-200"
+            className="form-label w-full inline-block mt-4 mb-2 pl-1 text-lg "
           >
             Password
           </label>
           <input
             type="password"
             name="password"
-            className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-800 focus:outline-none"
+            className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-gray-800 focus:outline-none"
             defaultValue={password}
             onChange={(e) =>
               setFormInputs({ ...formInputs, password: e.target.value })
@@ -98,7 +102,7 @@ export default function AdminLogin() {
         <div className="flex justify-end items-center mb-6">
           <a
             href="#"
-            className="text-blue-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out"
+            className="text-white-600 hover:text-blue-700 focus:text-blue-700 transition duration-200 ease-in-out "
           >
             Forgot password?
           </a>
@@ -115,11 +119,13 @@ export default function AdminLogin() {
 
         {/*form button */}
         <FormButton
+          
           text={{ loading: "Processing", default: "Login" }}
           isLoading={isLoading}
-          icon={<RiLoginCircleFill className="mb-[-2px] ml-1" size={27} />}
+          // icon={<RiLoginCircleFill className="mb-[-2px] ml-1" size={27} />}
         />
       </form>
     </div>
+  
   );
 }
